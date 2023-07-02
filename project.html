@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work at Home Mom</title>
+    <style>
+        body {
+            background: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+        }
+      h1 {
+        text-align: center;
+        color: #ffb5b5;
+        font-family: cursive;
+        border: 1px solid #ffb5b5;
+        padding: 15px
+        font-size: 40px;
+        border-radius: 4px;
+      }
+      h2 {
+        text-align: center;
+        font-size: 24px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: lighter;
+        color: #407088;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        padding: 25px;
+        max-width: 100%;
+        border-radius: 15%;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 16px;
+        margin: 20px 0 10px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        color: #407088;
+      }
+      .learn-more {
+
+        text-decoration: none;
+        font-size: 16px;
+        font-family: cursive;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        background-color: #ffb5b5;
+        color: white;
+        font-size: 24px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding: 20px 30px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px 5px rgba(112, 106, 106, 0.833);
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+      }
+
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+        transition: all 200ms ease-in-out;
+        background: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+        color: #ffb5b5;
+      }
+      .footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Work at Home Mom</h1>
+      <h2>
+        A way to work inside your comfort zone...
+        <span style="color: #ffb5b5"><em>literally</em></span
+        >!
+      </h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/668/original/WAHM.jpeg?1666412102"
+        alt="momAtHome"
+        width="500"
+      />
+      <p>
+        A work at home parent is someone who conducts remote work from home and
+        integrates parenting into his or her working time and workspace. They
+        are sometimes referred to as a WAHM (work at home mom) or a WAHD (work
+        at home dad). Parents who work from home can customize their day to meet
+        their family's needs. More family time and no commute? Sounds great!
+      </p>
+      <p>
+        Looking for some great resources?
+        <a href="https://www.wahm.com" target="_blank" class="learn-more">
+          Click here!
+        </a>
+      </p>
+      <button class="buy-button">WAHM Merch</button><br />
+      <hr />
+      <p class="footer">
+        This page was lovingly coded <em>for the mamas</em> by
+        <strong>Heather Gallo</strong>
+        <br />
+
+        Visit me
+        <a href="https://www.instagram.com/lifewithgallentino/" target="_blank"
+          >here</a
+        >
+        to connect
+      </p>
+    </div>
+
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+        let interest = prompt(
+          "Are you interested in 'WAHM' merch to show yourself off with pride? Reply yes or no"
+        );
+
+        interest = interest.toLowerCase().trim();
+
+        if (interest === "yes") {
+          alert(
+            "Thanks, " +
+              name +
+              ", we'll send you over some swag links to the email provided shortly!"
+          );
+        } else {
+          if (interest === "no") {
+            alert(
+              "That's too bad, " +
+                name +
+                ". We'll send you a welcome email 🙋‍♀️ Make sure you add us to your contact list and we'll send you periodic information based on your preferred settings!"
+            );
+          }
+        }
+      }
+
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
